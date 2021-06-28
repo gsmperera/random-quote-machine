@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+#quote-box {
+    width: 30em;
+    padding: 1em 1.5em 1.5em;
+    background-color: white;
+    border-radius: 5px;
+    & > a {
+        padding: 0.2em;
+        color: white;
+        margin-top: 2em;
+        border-radius: 2px;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+}
+#text {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-bottom: 0.6em;
+    font-size: 2em;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &::before {
+        content: '\201C';
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 2em;
+        margin-right: 5px;
+    }
+}
+#author {
+    text-align: right;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &::before {
+        content: '-';
+    }
+}
+#tweet-quote {
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tumblr-quote {
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#new-quote {
+    width: 6em;
+    height: 1.5em;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
